@@ -38,6 +38,9 @@ DEVELOPER DOCUMENTATION:
 Contact @mat1520 for complete documentation package.
 """
 
+import json
+
+
 class APIDocs:
     """API Documentation - Demo version"""
     
@@ -63,3 +66,7 @@ class APIDocs:
             "endpoints": self.demo_endpoints,
             "demo_note": "Full version has comprehensive API documentation"
         }
+
+
+if __name__ == "__main__":
+    print(json.dumps(APIDocs().get_demo_docs(), indent=2))
